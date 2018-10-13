@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Caffe Bar Calypso</title>
+  <meta name="viewport" content="initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" /> 
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="drugifrizz.css">
+  <link rel="stylesheet" type="text/css" href="animate.css">
+
+  <style>
+    .zoom {      
+-webkit-transition: all 0.35s ease-in-out;    
+-moz-transition: all 0.35s ease-in-out;    
+transition: all 0.35s ease-in-out;     
+cursor: -webkit-zoom-in;      
+cursor: -moz-zoom-in;      
+cursor: zoom-in;  
+}     
+
+.zoom:hover,  
+.zoom:active,   
+.zoom:focus {
+/**adjust scale to desired size, 
+add browser prefixes**/
+-ms-transform: scale(1.5);    
+-moz-transform: scale(1.5);  
+-webkit-transform: scale(1.5);  
+-o-transform: scale(1.5);  
+transform: scale(1.5);    
+position:relative;      
+z-index:100;  
+}
+
+/**To keep upscaled images visible on mobile, 
+increase left & right margins a bit**/  
+@media only screen and (max-width: 768px) {   
+ul.gallery {      
+margin-left: 15vw;       
+margin-right: 15vw;
+}
+  </style>
+<script src="http://maps.google.com/maps/api/js?sensor=false" 
+          type="text/javascript"></script>
+
+</head>
+<body>
+
+ <nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container" class="indexpage">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand disabled" href="index.html">Caffe Bar Calypso</a>
+    </div>
+    <div id="navbar" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a id="naslovnanavbar" href="#naslovna">Naslovnica</a></li>
+        <li><a id="onamanavbar" href="#onama">O nama</a></li>
+       <li><a id="galerijanavbar" href="#galerija">Galerija</a></li>
+        <li><a id="kontaktnavbar" href="#kontakt">Kontakt</a></li>
+      </ul>
+    </div>
+  </div>
+ </nav>
+
+    <section class="indexbody" id="naslovna">
+     <div class="container">
+     	<div class="row">
+     		<div class="col-lg-12">
+	     			<div class="content">
+	     				<h1 class="tlt" data-in-effect="rollIn" class="indexnaslov">Caffe Bar Calypso</h1>
+	     				<h3 class="tlt">Najbolji Caffe Bar uz najbolju uslugu</h3>
+	     				<hr>
+	     				<button class="btn btn-primary btn-lg indexbutton" id="buttonanimate"><i class="glyphicon glyphicon-scissors"></i><a href="#onama">Saznajte više!</a></button>
+	     			</div>
+		            <div class="info visible-lg" id="adresapadding">
+		            	<h3 class="animated bounceIn">Caffe Bar je osnovan 1998. godine</h3>
+		                <h3 class="animated bounceIn">Braće Radića 2a, Mraclin<br>
+		                Tel: 01-8468-118
+		                <span id="mobbpadding" class="animated bounceIn">Mob: 099-987-2221</span></h3>
+			            </div>
+		            <div class="narudzba">
+		              <h3 id="margintopnarudzba">Želite naručiti unaprijed? Nema problema!<h3>
+		              <button class="btn btn-primary btn-lg indexbutton" id="buttonkontaktpocetna"><i class="glyphicon glyphicon-scissors"></i><a href="#kontakt">Kliknite za više informacija o narudžbi</a></button>
+		            </div>
+     			</div>
+     		</div>
+     	</div>
+    </section>
+
+
+    <section id="marginsection" class="onamapage">
+        <div class="container" style="margin-top:5px">
+          <div class="row top-buffer">
+            <div class="col-lg-12">
+              <div class="content" id="onama">
+                <h1 class="onamanaslov">O nama</h1>
+                <h3 class="animated bounceIn">Od 1998. godine najbolje poslužujemo više stotina kupaca svaki dan u selu Mraclin pored Velike Gorice.  Naše dugogodišnje iskustvo obećava Vama vrhunsku uslugu. Uz 4 zaposlenika, naš moto da su svi klijenti zadovoljni.</h3>
+                <hr>
+                <button class="btn btn-primary btn-lg onamabutton" id="galerijaslikaanimate"><i class="glyphicon glyphicon-scissors"><a href="#galerija"></i>Pogledajte našu galeriju slika</a></button>
+                <h2 id="h2somet">Cjenik usluga:</h2>
+		        <div class="animated bounceIn" id="floats">
+		        <h3>Kava - 6kn</h3>
+		        <h3>Kava s mlijekom - 8 kn</h3>
+		        <h3>Espresso - 5 kn</h3>
+		        <h3>Cappucinno - 10kn</h3>
+		        <h3>Cedevita - 10kn</h3>
+		        </div>
+		        <div class="animated bounceIn" id="floats">
+		        <h3>Ožujsko - 12kn</h3>
+		        <h3>Karlovačko - 12kn</h3>
+		        <h3>Pan - 12kn</h3>
+		        <h3>Likeri - 6kn</h3>
+		        <h3>Žestice - 5kn</h3>
+		        </div>
+              </div>
+            </div>
+          </div>
+         </div>
+      </section>
+
+            <section class="galerijapage">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="content" id="galerija">
+                      <h1 class="indexnaslov" id="galerijabuttonanimate" class="tlt">Galerija slika</h1>
+                      <button class="btn btn-primary btn-lg indexbutton kontaktbutton" id="galerijakontaktanimate" ><i class="glyphicon glyphicon-scissors"></i><a href="#kontakt">Zainteresirani ste? Kliknite za narudžbu!</a></button>
+                      <hr>
+                    </div>
+                  </div>
+
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-6">
+          <div class="thumbnail zoom">
+            <img src="http://cdn.wallpapersafari.com/93/24/32fyoe.jpg">
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6">
+          <div class="thumbnail zoom">
+            <img src="https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/mado5ne/people-sit-at-tables-and-bar-counter-in-cafe-club-gogol_mkgvvvdh___F0000.png">
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6">
+          <div class="thumbnail zoom">
+            <img src="http://barlicone.com/wp-content/uploads/2016/03/SFONDO-CAFFE-006.jpg">
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6">
+          <div class="thumbnail zoom">
+            <img src="https://s-media-cache-ak0.pinimg.com/originals/fe/c6/b6/fec6b63f6d25efe2c6f1f66ec26a87e7.jpg">
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6">
+          <div class="thumbnail zoom">
+            <img src="https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/mado5ne/people-sit-at-tables-and-bar-counter-in-cafe-club-gogol_mkgvvvdh___F0000.png">
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6">
+          <div class="thumbnail zoom">
+            <img src="http://cdn.wallpapersafari.com/93/24/32fyoe.jpg">
+          </div>
+        </div>
+    </div>
+                </div>
+              </section>
+
+            <section class="kontaktpage">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="content" id="kontakt">
+                      <h1 class="onamanaslov">Kontakt</h1>
+                      <h2>Želite se naručiti ili nas samo kontaktirati? Ne ustručavajte se nazvati nas!</h2>
+                      <hr>
+                      <h3>Gdje se točno nalazimo?</h3>
+                      <div class="row">
+                        <div class="col-lg-6" id="kontaktpaddingbottom">
+                            	<h3 class="afontsize">Adresa: Braće Radića 2a</h3>
+				              <h3 class="afontsize">Mjesto: Mraclin</h3>
+				              <h3 class="afontsize">Telefon: 01-5477-568 </h3>
+				              <h3 class="afontsize">Mobitel: 099-877-5400</h3>
+                        </div>
+                        <div class="col-lg-6">
+                            <h3 id="lokacijamalipadding">Lokacija OPG-a:</h3>
+                            <div id="map" style="width: 500px; height: 350px;"></div>
+                        </div>
+                      </div>
+                      <ul class="list-inline banner-social-buttons socialbuttonsagain" >
+                                  <li>
+                                      <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                                  </li>
+                                  <li>
+                                      <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
+                                  </li>
+                                  <li>
+                                      <a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
+                                  </li>
+                        </ul>
+                      <button class="btn btn-primary btn-lg indexbutton kontaktbutton" id="cijenebuttonanimate"><i class="glyphicon glyphicon-scissors"></i><a href="#onama">Jeste li proučili cijene?</a></button>
+                    </div>
+                  </div>
+                </div>
+               </div>
+              </section>
+
+
+ <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.js"></script>
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+ <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="jquery.fittext.js"></script>
+ <script type="text/javascript" src="jquery.lettering.js"></script>
+ <script type="text/javascript" src="jquery.textillate.js"></script>
+ <script type="text/javascript" src="myjs.js"></script>
+<script type="text/javascript">
+   var locations = [
+      ['OPG Kaurić', 45.6680, 16.1040, 1],
+    ];
+
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 13,
+      center: new google.maps.LatLng(45.66, 16.09),
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    });
+
+    var infowindow = new google.maps.InfoWindow();
+
+    var marker, i;
+
+    for (i = 0; i < locations.length; i++) {  
+      marker = new google.maps.Marker({
+        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+        map: map
+      });
+
+      google.maps.event.addListener(marker, 'click', (function(marker, i) {
+        return function() {
+          infowindow.setContent(locations[i][0]);
+          infowindow.open(map, marker);
+        }
+      })(marker, i));
+    }
+  </script>
+
+<script>
+$("#naslovnanavbar").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#naslovna").offset().top
+    }, 1600);
+});
+
+$("#onamanavbar").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#onama").offset().top
+    }, 1600);
+});
+
+$("#galerijanavbar").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#galerija").offset().top
+    }, 1600);
+});
+
+$("#kontaktnavbar").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#kontakt").offset().top
+    }, 1600);
+});
+
+$("#buttonanimate").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#onama").offset().top
+    }, 1600);
+});
+
+$("#buttonkontaktpocetna").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#kontakt").offset().top
+    }, 1600);
+});
+
+$("#galerijaslikaanimate").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#galerijabuttonanimate").offset().top
+    }, 1600);
+});
+
+$("#galerijakontaktanimate").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#kontakt").offset().top
+    }, 1600);
+});
+
+$("#cijenebuttonanimate").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#onama").offset().top
+    }, 1600);
+});
+</script>
+
+</body>
+</html>
