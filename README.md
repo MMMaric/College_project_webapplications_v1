@@ -1,9 +1,9 @@
 # College_project_webapplications_v1
 College project for course Web Applications at University of Applied Sciences Velika Gorica.
 
---> About : College project for course Web Applications at University of Applied Sciences Velika Gorica.
+<b>--> About : </b> College project for course Web Applications at University of Applied Sciences Velika Gorica.
 
---> Technologies used : 
+<b>--> Technologies used : </b>
 
     1. HTML
     2. CSS
@@ -11,7 +11,7 @@ College project for course Web Applications at University of Applied Sciences Ve
     4. jQuery
     
     
-How to use: 
+<b>How to use:</b> 
 
 1. Download ZIP file or clone it into your computer.
 2. Right click on index.html 
