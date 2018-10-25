@@ -6,6 +6,8 @@ These instructions will get you a copy of the project up and running on your loc
 
 <b>---> About : </b> College project for course Web Applications at University of Applied Sciences Velika Gorica.
 
+### Prerequisites
+
 <b>---> Technologies used : </b>
 
     1. HTML
